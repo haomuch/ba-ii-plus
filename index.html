@@ -1,20 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#F3F4F6" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-status-bar-style" content="default" />
-    <meta property="og:image" content="https://haomuch.github.io/ba-ii-plus/assets/icon-fZSV6rps.png" />
-    <link rel="icon" type="image/svg+xml" href="/ba-ii-plus/assets/icon-fZSV6rps.svg" />
-    <link rel="apple-touch-icon" href="/ba-ii-plus/assets/icon-fZSV6rps.png" />
-    <title>BA II Plus Financial Calc</title>
-    <script type="module" crossorigin src="/ba-ii-plus/assets/index-Nwn0qdQ6.js"></script>
-    <link rel="stylesheet" crossorigin href="/ba-ii-plus/assets/index-CEk0yHWR.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F3F4F6" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-status-bar-style" content="default" />
+  <link rel="icon" type="image/svg+xml" href="/ba-ii-plus/assets/icon-fZSV6rps.svg" />
+  <title>Financial Pro BA II Plus</title>
+  <script>
+    // Pre-compute correct scale before first paint to prevent flash of unscaled content
+    (function(){
+      var bh=830,bw=430,vh=window.innerHeight,vw=window.innerWidth;
+      var sy=Math.max(vh-40,0)/bh,sx=Math.max(vw-40,0)/bw;
+      var s=Math.max(0.3,Math.min(sy,sx));
+      document.documentElement.style.setProperty('--calc-scale',s);
+    })();
+  </script>
+  <script type="module" crossorigin src="/ba-ii-plus/assets/index-BZRcvhGv.js"></script>
+  <link rel="stylesheet" crossorigin href="/ba-ii-plus/assets/index-CDWiOnY9.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
